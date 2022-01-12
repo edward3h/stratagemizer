@@ -6,7 +6,7 @@ defineEmits<{
 </script>
 
 <template>
-  <div v-if="stratagems" class="mygrid">
+  <div v-if="stratagems.value.length > 0" class="mygrid">
     <Stratagem v-for="stratagem in stratagems.value" :key="stratagem.type + stratagem.name" :stratagem="stratagem" @hide="$emit('hide',$event)" />
   </div>
   <div v-else>

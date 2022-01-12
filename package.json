@@ -10,8 +10,7 @@
   },
   "dependencies": {
     "@vueuse/core": "^7.4.1",
-    "vue": "^3.2.26",
-    "vue-router": "^4.0.12"
+    "vue": "^3.2.26"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.14.2",
@@ -20,20 +19,19 @@
     "@unocss/reset": "^0.20.0",
     "@vitejs/plugin-vue": "^2.0.1",
     "@vue/test-utils": "^2.0.0-rc.18",
+    "dotenv": "^10.0.0",
     "eslint": "^8.5.0",
+    "js-yaml": "^4.1.0",
     "jsdom": "^19.0.0",
+    "papaparse": "^5.3.1",
     "pnpm": "^6.24.3",
+    "sanitize-html": "^2.6.1",
     "typescript": "^4.5.4",
     "unocss": "^0.20.0",
     "unplugin-auto-import": "^0.5.5",
     "unplugin-vue-components": "^0.17.11",
     "vite": "^2.7.9",
-    "vite-plugin-pages": "^0.19.8",
     "vitest": "^0.0.119",
-    "xhr2": "^0.2.1",
-    "dotenv": "^10.0.0",
-    "js-yaml": "^4.1.0",
-    "papaparse": "^5.3.1",
-    "sanitize-html": "^2.6.1"
+    "xhr2": "^0.2.1"
   }
 }
