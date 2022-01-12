@@ -269,8 +269,8 @@ factions:
     - Kronos
     - Leviathan
 
-  - name: Unaligned
-    subfactions:
+  # - name: Unaligned
+  #   subfactions:
 
   - name: Ynnari
     superfaction: Aeldari
