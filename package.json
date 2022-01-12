@@ -6,7 +6,7 @@
     "preview": "vite preview",
     "lint": "eslint . --ext=.ts,.vue",
     "test": "vitest",
-    "prepublish": "node scripts/prepublish.mjs"
+    "prepublish": "node preprocessor/prepublish.mjs"
   },
   "dependencies": {
     "@vueuse/core": "^7.4.1",
