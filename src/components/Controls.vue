@@ -8,6 +8,9 @@ const props = defineProps<{
   clearHidden: () => void
   selectedFactions: Set<string>
   hiddenCount: number
+  disableClearAll: boolean
+  clearAll: () => void
+  isMenuOpen: boolean
 }>()
 
 const open = ref(new Set<string>())
@@ -31,9 +34,9 @@ const isChecked = (faction: string) => props.selectedFactions.value.has(faction)
 const noHidden = computed(() => props.hiddenCount.value < 1)
 </script>
 <template>
-  <div>
+  <div v-if="isMenuOpen.value">
     <h1>Choose Factions</h1>
-    <Collapse v-for="sf in superfactions" :key="sf" :title="sf" :is-open="open.has(sf)" stripe @change="toggleOpen($event, sf)">
+    <Collapse v-for="sf in superfactions" :key="sf" :title="sf" :is-open="open.has(`SF_${sf}`)" stripe @change="toggleOpen($event, `SF_${sf}`)">
       <Collapse v-for="f in factionsFor(sf)" :key="f" :title="f" :is-open="open.has(f)" stripe @change="toggleOpen($event, f)">
         <template #title>
           <Checkbox p-l-2 :checked="isChecked(f)" @change="toggleFaction($event, f)" />
@@ -47,8 +50,11 @@ const noHidden = computed(() => props.hiddenCount.value < 1)
         </template>
       </Collapse>
     </Collapse>
-    <button btn w-auto :disabled="noHidden" @click="clearHidden">
+    <button block btn w-auto :disabled="noHidden" @click="clearHidden">
       Show {{ hiddenCount }} hidden.
+    </button>
+    <button block btn w-auto :disabled="disableClearAll.value" @click="clearAll">
+      Clear all selections.
     </button>
   </div>
 </template>

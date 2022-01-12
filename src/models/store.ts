@@ -10,14 +10,18 @@ const factionMatch = (faction: string, stratagem: { faction_id: string; name: st
 }
 
 const selectedFactions = ref(new Set<string>())
+const hidden = ref(new Set<string>())
 
 const addFaction = (faction: string) => selectedFactions.value.add(faction)
 const removeFaction = (faction: string) => selectedFactions.value.delete(faction)
 
-const hidden = ref(new Set())
 
 const hideStratagem = (name: string) => hidden.value.add(name)
 const clearHidden = () => hidden.value.clear()
+const clearAll = () => {
+  clearHidden()
+  selectedFactions.value.clear()
+}
 
 const factionsFor = (superfaction: string) => factions.filter(f => f.superfaction === superfaction).map(f => f.name)
 const subfactionsFor = (faction: string) => factionMap.get(faction).subfactions
@@ -32,6 +36,7 @@ const displayStratagems = computed(() => {
   }).filter(s => !hidden.value.has(s.name))
 })
 const hiddenCount = computed(() => hidden.value.size)
+const disableClearAll = computed(() => hidden.value.size < 1 && selectedFactions.value.size < 1)
 
 export default {
   superfactions,
@@ -44,4 +49,6 @@ export default {
   displayStratagems,
   selectedFactions,
   hiddenCount,
+  clearAll,
+  disableClearAll,
 }
