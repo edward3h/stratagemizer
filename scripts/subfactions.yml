@@ -1,0 +1,282 @@
+superfactions:
+  - Imperium
+  - Chaos
+  - Aeldari
+  - Tyranids
+  - Other
+factions:
+  - name: Adeptus Custodes
+    superfaction: Imperium
+    subfactions:
+    - Aquilan Shield
+    - Dread Host
+    - Emissaries Imperatus
+    - Shadowkeepers
+    - Solar Watch
+
+  - name: Adeptus Mechanicus
+    superfaction: Imperium
+    subfactions:
+    - Agripinaa
+    - Graia
+    - Lucius
+    - Mars
+    - Mechanicus Defence Cohort
+    - Metalica
+    - Ryza
+    - Skitarii Veteran Cohort
+    - Stygies VIII
+
+  - name: Astra Militarum
+    superfaction: Imperium
+    subfactions:
+    - 133rd Lambdan Lions
+    - 32nd Thetoid Eagles
+    - 43rd Iotan Dragons
+    - 54th Psian Jakals
+    - 55th Kappic Eagles
+    - 9th Iotan Gorgonnes
+    - Armageddon
+    - Cadian
+    - Catachan
+    - Militarum Tempestus
+    - Mordian
+    - Tallarn
+    - Valhallan
+    - Vostroyan
+
+  - name: Adepta Sororitas
+    superfaction: Imperium
+    subfactions:
+    - Order of Our Martyred Lady
+    - Order of the Argent Shroud
+    - Order of the Bloody Rose
+    - Order of the Ebon Chalice
+    - Order of the Sacred Rose
+    - Order of the Valorous Heart
+
+  - name: Chaos Daemons
+    superfaction: Chaos
+    subfactions:
+    - Disciples of Be'lakor
+    - Khorne Daemons
+    - Nurgle Daemons
+    - Slaanesh Daemons
+    - Tzeentch Daemons
+
+  - name: Chaos Space Marines
+    superfaction: Chaos
+    alias: Heretic Astartes
+    subfactions:
+    - Alpha Legion
+    - Black Legion
+    - Brazen Beasts
+    - Creations of Bile
+    - Crimson Slaughter
+    - Emperor's Children
+    - Fallen Angels
+    - Flawless Host
+    - Iron Warriors
+    - Night Lords
+    - Purge
+    - Red Corsairs
+    - Scourged
+    - Word Bearers
+    - World Eaters
+
+  - name: Craftworlds
+    superfaction: Aeldari
+    subfactions:
+    - Alaitoc
+    - Biel-Tan
+    - Iyanden
+    - Saim-Hann
+    - Ulthwé
+
+  - name: Death Guard
+    superfaction: Chaos
+    subfactions:
+    - Ferrymen
+    - Gellerpox Infected
+    - Harbingers
+    - Inexorable
+    - Mortarion's Anvil
+    - Mortarion's Chosen Sons
+    - Poxmongers
+    - Terminus Est Assault Force
+    - Wretched
+
+  - name: Drukhari
+    superfaction: Aeldari
+    subfactions:
+    - Coven of Twelve
+    - Cult of Strife
+    - Cult of the Cursed Blade
+    - Cult of the Red Grief
+    - Kabal of the Black Heart
+    - Kabal of the Flayed Skull
+    - Kabal of the Obsidian Rose
+    - Kabal of the Poisoned Tongue
+    - Prophets of Flesh
+    - The Dark Creed
+
+  - name: Genestealer Cults
+    superfaction: Tyranids
+    subfactions:
+    - Cult of the Four-armed Emperor
+    - The Bladed Cog
+    - The Hivecult
+    - The Pauper Princes
+    - The Rusted Claw
+    - The Twisted Helix
+
+  - name: Grey Knights
+    superfaction: Imperium
+    subfactions:
+    - Blades of Victory
+    - Exactors
+    - Prescient Brethren
+    - Preservers
+    - Rapiers
+    - Silver Blades
+    - Swordbearers
+    - Wardmakers
+
+  - name: Harlequins
+    superfaction: Aeldari
+    subfactions:
+    - Dreaming Shadow
+    - Frozen Stars
+    - Harlequins
+    - Midnight Sorrow
+    - Silent Shroud
+    - Soaring Spite
+    - Veiled Path
+
+  - name: Inquisition
+    superfaction: Imperium
+    subfactions:
+
+  - name: Necrons
+    subfactions:
+    - Mephrit
+    - Nephrekh
+    - Nihilakh
+    - Novokh
+    - Sautekh
+    - Szarekhan
+
+  - name: Officio Assassinorum
+    superfaction: Imperium
+    subfactions:
+    - Callidus
+    - Culexus
+    - Eversor
+    - Vindicare
+
+  - name: Orks
+    subfactions:
+    - Bad Moons
+    - Blood Axe
+    - Blood Axes
+    - Deathskulls
+    - Evil Sunz
+    - Freebooterz
+    - Goff
+    - Snakebites
+    - Speed Freeks Speed Mob
+
+  - name: Imperial Knights
+    superfaction: Imperium
+    subfactions:
+    - Freeblade Lance
+    - House Cadmus
+    - House Griffith
+    - House Hawkshroud
+    - House Krast
+    - House Mortan
+    - House Raven
+    - House Taranis
+    - House Terryn
+    - House Vulker
+    - Questor Imperialis
+    - Questor Mechanicus
+
+  - name: Chaos Knights
+    superfaction: Chaos
+    subfactions:
+    - Chaos Knights
+    - House Herpetrax
+    - House Khomentis
+    - House Khymere
+    - House Lucaris
+    - House Vextrix
+    - Iconoclast Household
+    - Infernal Household
+
+  - name: Rogue Traders
+    superfaction: Imperium
+    subfactions:
+    - Elucidian Starstriders
+
+  - name: Space Marines
+    superfaction: Imperium
+    alias: Adeptus Astartes
+    subfactions:
+    - Black Templars
+    - Blood Angels
+    - Blood Ravens
+    - Crimson Fists
+    - Dark Angels
+    - Deathwatch
+    - Emperor's Spears
+    - Exorcists
+    - Flesh Tearers
+    - Imperial Fists
+    - Iron Hands
+    - Kill Team Strike Force
+    - Raven Guard
+    - Salamanders
+    - Silver Templars
+    - Space Wolves
+    - Ultramarines
+    - White Scars
+    - Wolfspear
+
+  - name: Sisters of Silence
+    superfaction: Imperium
+    subfactions:
+
+  - name: T'au Empire
+    subfactions:
+    - Bork'an
+    - Dal'yth
+    - Farsight Enclaves
+    - Sa'cea
+    - T'au Sept
+    - Vior'la
+    
+  - name: Thousand Sons
+    superfaction: Chaos
+    subfactions:
+
+  - name: Tyranids
+    superfaction: Tyranids
+    subfactions:
+    - Behemoth
+    - Gorgon
+    - Jormungandr
+    - Kraken
+    - Kronos
+    - Leviathan
+
+  - name: Unaligned
+    subfactions:
+
+  - name: Ynnari
+    superfaction: Aeldari
+    subfactions:
+
+  - name: Astra Cartographica
+    superfaction: Imperium
+    subfactions:
