@@ -1,6 +1,6 @@
 import sanitizeHtml from 'sanitize-html'
 
-const description = (input) => {
+const description = (input: string) => {
   return sanitizeHtml(input, {
     allowedTags: ['p', 'span', 'em'],
     allowedClasses: { span: ['kwb'] },
@@ -10,7 +10,7 @@ const description = (input) => {
   })
 }
 
-const convert = (value, headerName) => {
+const convert = (value: string, headerName: string) => {
   if (headerName === 'description')
     return description(value)
 

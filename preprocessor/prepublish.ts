@@ -1,11 +1,13 @@
-import './env.mjs'
+/// <reference types="../typings/xhr2" />
+import './env'
 import fs from 'fs'
 import assert from 'assert'
 import xhr2 from 'xhr2'
 import papa from 'papaparse'
 import yaml from 'js-yaml'
-import convert from './convert.mjs'
-import cleanup from './cleanup.mjs'
+import convert from './convert'
+import cleanup from './cleanup'
+import type { Stratagem, SubfactionsFile } from './types'
 global.XMLHttpRequest = xhr2.XMLHttpRequest
 
 const httpPrefix = process.env.DATA_PREFIX
@@ -24,12 +26,13 @@ dataAssets.forEach((filename) => {
     transformHeader: s => s.trim(),
     transform: convert,
     complete: (results) => {
-      fs.writeFileSync(`${outputPrefix}/${filename}.json`, JSON.stringify(cleanup(results.data), null, 2))
+      const rows = results.data as Stratagem[]
+      fs.writeFileSync(`${outputPrefix}/${filename}.json`, JSON.stringify(cleanup(rows), null, 2))
     },
   })
 })
 
-const sf = yaml.load(fs.readFileSync('scripts/subfactions.yml'))
+const sf = yaml.load(fs.readFileSync('preprocessor/subfactions.yml', 'utf-8')) as SubfactionsFile
 sf.factions.forEach((f) => {
   f.superfaction ||= 'Other'
   f.subfactions ||= []
