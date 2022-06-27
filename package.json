@@ -23,7 +23,7 @@
     "@unocss/reset": "^0.20.0",
     "@vitejs/plugin-vue": "^2.0.1",
     "@vue/test-utils": "^2.0.0-rc.18",
-    "dotenv": "^10.0.0",
+    "dotenv": "16.0.1",
     "eslint": "^8.5.0",
     "js-yaml": "^4.1.0",
     "jsdom": "^19.0.0",
