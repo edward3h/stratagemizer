@@ -10,7 +10,7 @@
     "prepublish": "node --loader ts-node/esm --experimental-specifier-resolution=node preprocessor/prepublish.ts"
   },
   "dependencies": {
-    "@vueuse/core": "^7.4.1",
+    "@vueuse/core": "8.9.4",
     "vue": "^3.2.26"
   },
   "devDependencies": {
