@@ -11,7 +11,7 @@ specifiers:
   '@vitejs/plugin-vue': ^2.0.1
   '@vue/test-utils': ^2.0.0-rc.18
   '@vueuse/core': ^7.4.1
-  dotenv: 16.0.1
+  dotenv: 16.3.1
   eslint: ^8.5.0
   js-yaml: ^4.1.0
   jsdom: ^19.0.0
@@ -42,7 +42,7 @@ devDependencies:
   '@unocss/reset': 0.43.0
   '@vitejs/plugin-vue': 2.0.1_vite@2.7.9+vue@3.2.26
   '@vue/test-utils': 2.0.0-rc.18_vue@3.2.26
-  dotenv: 16.0.1
+  dotenv: 16.3.1
   eslint: 8.5.0
   js-yaml: 4.1.0
   jsdom: 19.0.0
@@ -1348,8 +1348,8 @@ packages:
       domhandler: 4.2.2
     dev: true
 
-  /dotenv/16.0.1:
-    resolution: {integrity: sha512-1K6hR6wtk2FviQ4kEiSjFiH5rpzEVi8WW0x96aztHVMhEspNpc4DVOUTEHtEva5VThQ8IaBX1Pe4gSzpVVUsKQ==}
+  /dotenv/16.3.1:
+    resolution: {integrity: sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==}
     engines: {node: '>=12'}
     dev: true
 
